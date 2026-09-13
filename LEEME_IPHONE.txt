@@ -1,0 +1,17 @@
+JAPÓN 2026 · INSTALACIÓN EN IPHONE
+
+IMPORTANTE
+El archivo HTML enviado por WhatsApp no es una web para iPhone: WhatsApp/iOS lo previsualiza como documento y puede bloquear JavaScript.
+
+PARA TENER LA APP COMPLETA
+1. Publica el contenido de esta carpeta en cualquier alojamiento web HTTPS (Netlify Drop, GitHub Pages, Cloudflare Pages, etc.).
+2. Abre la URL resultante en SAFARI del iPhone.
+3. Toca Compartir.
+4. Toca “Añadir a pantalla de inicio”.
+5. Abre “Japón 2026” desde el icono creado.
+
+OFFLINE
+Después de abrir la web una vez con internet, el service worker guarda los archivos principales para poder volver a abrir la guía sin conexión. Los mapas, webs externas y servicios online seguirán necesitando datos.
+
+WHATSAPP
+Por WhatsApp comparte la URL HTTPS, no el archivo .html. Así el receptor toca el enlace y Safari abre la guía correctamente.
