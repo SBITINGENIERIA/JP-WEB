@@ -1,10 +1,12 @@
-JAPÓN 2026 · iPhone v6
+JAPÓN 2026 · iPhone v7
 
-Cambios principales:
-- Todos los enlaces de ubicación abren Google Maps.
-- Traductor reparado: abre Google Translate con Español ↔ Japonés.
-- Botón Traducir disponible en Inicio, Modo Día y Más > Herramientas.
-- Caché PWA actualizada a v6 para forzar la carga de esta versión.
-
-Para GitHub Pages, sustituye index.html y sw.js (y, si quieres, todo el contenido de esta carpeta).
-En iPhone: cierra la pestaña/app anterior y vuelve a abrir la URL. Si sigue apareciendo la versión antigua, elimina el icono de pantalla de inicio y vuelve a añadirlo.
+CAMBIOS IMPORTANTES
+1. Los botones de ubicación fuerzan Google Maps mediante el esquema comgooglemapsurl://.
+   - Si Google Maps está instalado, se abre la app.
+   - Si no está instalado, la guía cae al enlace web de Google Maps.
+2. El botón Traducir intenta abrir directamente la app Traducir de Apple con translate://.
+   Apple no documenta oficialmente ese esquema, por lo que se incluye un respaldo fiable mediante Atajos.
+3. Para el respaldo de Traducir, crear una sola vez en el iPhone:
+   Atajos → + → Añadir acción → Abrir app → Traducir → nombre: Abrir Traducir.
+   Después, el botón “Abrir mediante Atajo” funcionará con shortcuts://run-shortcut.
+4. Tras subir esta versión a GitHub Pages, cerrar la app/web anterior o eliminar y volver a añadir el icono para vaciar la caché antigua.
